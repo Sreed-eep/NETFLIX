@@ -1,0 +1,169 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> OTT Platform</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma (sans-serif);
+            background-color: #1f1f1f;
+            color: #fff;
+        }
+
+        header {
+            background-color: black;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 3em;
+         
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e50914;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #e50914;
+        }
+
+        .content-item {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: #8e8e8e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+         NETFLIX
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Series</a>
+        <a href="#">My List</a>
+        
+    </nav>
+ <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" id="login-button" onclick="authenticateUser()">Login</button>
+        </form>
+
+    <!-- Main Content Section -->
+    <main>
+<form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search for movies, series, etc.">
+        <button type="button" id="search-button" onclick="searchContent()">Search</button>
+        
+    </form>
+       
+        <section>
+            <h2>Featured Content</h2>
+            <div class="content-item">
+                
+                <!-- Additional details or buttons can be added here -->
+            </div>
+        </section>
+
+        <img src="movie1.jpg" alt="Movie 1 Poster">
+        <h2>Movie 1</h2>
+        <p>Release Year: 2022</p>
+        <p>Genre: Action</p>
+        <p>Description: Fighting agents</p>
+        <button onclick="playMovie('movie1.mp4')">Play Now</button>
+    </div>
+
+    <!-- Movie 2 -->
+    <div class="movie">
+        <img src="movie2.jpg" alt="Movie 2 Poster">
+        <h2>Movie 2</h2>
+        <p>Release Year: 2023</p>
+        <p>Genre: Drama</p>
+        <p>Description: Romance across countries</p>
+        <button onclick="playMovie('movie2.mp4')">Play Now</button>
+    </div>
+
+        <!-- Trending Section -->
+        <section>
+            <h2>Trending Now</h2>
+            <div class="content-item">
+                <img src="trending-movie.jpg" alt="Trending Movie">
+                <!-- Additional details or buttons can be added here -->
+            </div>
+            <!-- Add more trending content items as needed -->
+        </section>
+
+        <!-- Recommended Section -->
+        <section>
+            <h2>Recommended for You</h2>
+            <div class="content-item">
+                <img src="recommended-series.jpg" alt="Recommended Series">
+                <!-- Additional details or buttons can be added here -->
+            </div>
+            <!-- Add more recommended content items as needed -->
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+       
+        <button type="button" id="search-button" onclick="searchContent()">Subscribe</button>
+        
+    </footer>
+
+</body>
